@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 public class PlayerTest {
-
+    
     @Test
     public void shouldSumGenreIfOneGame() {
         GameStore store = new GameStore();
@@ -19,6 +19,6 @@ public class PlayerTest {
         int actual = player.sumGenre(game.getGenre());
         assertEquals(expected, actual);
     }
-
     // другие ваши тесты
 }
+
