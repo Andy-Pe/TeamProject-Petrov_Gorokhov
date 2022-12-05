@@ -53,8 +53,8 @@ public class PlayerTest {
 
         Player player = new Player("Petya");
         player.installGame(wow);
-        player.play(wow, 8);
 
+        int expected = 8;
         int actual = player.play(wow, 8);
         assertEquals(8, actual);
     }
