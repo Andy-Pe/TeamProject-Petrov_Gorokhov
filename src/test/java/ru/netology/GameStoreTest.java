@@ -73,4 +73,17 @@ public class GameStoreTest {
 
         Assertions.assertEquals(store.getSumPlayedTime(), 82);
     }
+    @Test
+    public void shouldSumPlayedTimeWithLastValues(){
+        GameStore store = new GameStore();
+        Game game = store.publishGame("Нетология Баттл Онлайн", "Аркады");
+
+        store.addPlayTime("Andy", 25);
+        store.addPlayTime("Andy", 50);
+
+        int expected = 75;
+        int actual = store.getSumPlayedTime();
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
