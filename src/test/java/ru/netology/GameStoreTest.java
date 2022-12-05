@@ -73,6 +73,7 @@ public class GameStoreTest {
 
         Assertions.assertEquals(store.getSumPlayedTime(), 82);
     }
+    
     /*Тест на суммирование времени с прошлым значением для конкретного игрока*/
     @Test
     public void shouldSumPlayedTimeWithLastValues(){
@@ -87,4 +88,4 @@ public class GameStoreTest {
 
         Assertions.assertEquals(expected, actual);
     }
-}
+ }
